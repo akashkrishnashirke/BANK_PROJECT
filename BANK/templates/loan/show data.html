@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{%extends 'loan/bade.html'%}
+{%block base_block%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>show data</title>
+</head>
+<body>
+<h1>customer name:</h1>
+{% for i in data%}
+{{i.name}}
+{{i.income}}
+{%endfor%}
+{%endblock%}
+
+</body>
+
+</html>
