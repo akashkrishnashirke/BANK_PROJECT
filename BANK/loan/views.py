@@ -12,7 +12,7 @@ def thanks(request):
 
 def random_digit(n):
     num=range(111111111,999999999999)
-    l=random.sample(num,n)
+    l=random.sample(num,n)   
     return str(l).strip('[]')
 
 def show_loan(request):
@@ -51,3 +51,7 @@ def show_data(request):
     data=LoanApplicationModel.objects.all()
 
     return render(request,'loan/show data.html',{'data':data})
+
+
+
+'''no changes dones by me'''
